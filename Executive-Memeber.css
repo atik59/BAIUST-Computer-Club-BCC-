@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.excutive-title{
+    height: auto;
+    width: 60%;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    border-left: 10px solid #cc1e4a;
+    background-color: #004c6c;
+    position: relative;
+
+}
+
+.spinner {
+    height: 60px;
+    width: max-content;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 1em;
+    color: #f5f5f5;
+    filter: drop-shadow(0 0 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .spinner span {
+    animation: loading6454 1.75s ease infinite;
+   }
+   
+   .spinner span:nth-child(2) {
+    animation-delay: 0.25s;
+   }
+   
+   .spinner span:nth-child(3) {
+    animation-delay: 0.5s;
+   }
+   
+   .spinner span:nth-child(4) {
+    animation-delay: 0.75s;
+   }
+   
+   .spinner span:nth-child(5) {
+    animation-delay: 1s;
+   }
+   
+   .spinner span:nth-child(6) {
+    animation-delay: 1.25s;
+   }
+   
+   .spinner span:nth-child(7) {
+    animation-delay: 1.5s;
+   }
+
+
+
+
+
+
+
+/* DIV 02  Member */
+.button {
+    display: flex;
+  }
+  
+  .box {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: #002D40;
+    overflow: hidden;
+  }
+  
+  .box:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    background: #EF476F;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+  }
+  
+  .box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'S';
+    background: #EF476F;
+  }
+  
+  .box:nth-child(3)::before {
+    content: 'I';
+    background: #EF476F;
+  }
+  
+  .box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'X';
+    background: #EF476F;
+  }
+  
+  .box:nth-child(5)::before {
+    content: ' ';
+  }
+  
+  .button:hover .box:before {
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   @keyframes loading6454 {
+    0%, 100% {
+     transform: translateY(0);
+    }
+   
+    50% {
+     transform: translateY(-10px);
+    }
+   }
+
+   @media (max-width: 800px) {
+    .excutive-title{
+        padding: 10px;
+    }
+    .spinner {
+        font-size: 100%;
+    }
+
+    .box {
+        width: 100%;
+        height: 10rem;
+    }
+}

@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* From uiverse.io by @mrhyddenn */
+.header-part{
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader span {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  
+  .loader span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+  }
+  
+  .loader span:nth-child(2) {
+    color: rgb(128, 198, 255);
+    -webkit-text-stroke: 1px rgb(128, 198, 255);
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+  
+  @keyframes uiverse723 {
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+       54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+
+  
+
+.parent {
+    height: auto;
+    padding: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+    
+.div1 {
+     grid-area: 1 / 1 / 2 / 2; 
+    }
+.div2 { 
+    grid-area: 1 / 2 / 2 / 4; 
+    align-self: center;
+}
+.div3 { 
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.div4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.div5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.div6 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+.div7 { 
+    grid-area: 2 / 4 / 3 / 5; 
+}
+.div8 { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+.div9 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+.div10 { 
+    grid-area: 3 / 3 / 4 / 4; 
+}
+.div11 { 
+    grid-area: 3 / 4 / 4 / 5; 
+}
+.div12 { 
+    grid-area: 4 / 1 / 5 / 2; 
+}
+.div13 { 
+    grid-area: 4 / 2 / 5 / 3; 
+}
+.div14 { 
+    grid-area: 4 / 3 / 5 / 4; 
+}
+.div15 { 
+    grid-area: 4 / 4 / 5 / 5; 
+}
+.div16 { 
+    grid-area: 5 / 1 / 6 / 2; 
+}
+
+
+
+
+.parent01{
+    height: auto;
+    padding: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+    
+    .div01 { grid-area: 1 / 1 / 2 / 2; }
+    .div02 { grid-area: 1 / 2 / 2 / 3; }
+    .div03 { grid-area: 1 / 3 / 2 / 4; }
+    .div04 { grid-area: 1 / 4 / 2 / 5; }
+    .div05 { grid-area: 2 / 1 / 3 / 2; }
+    .div06 { grid-area: 2 / 2 / 3 / 3; }
+    .div07 { grid-area: 2 / 3 / 3 / 4; }
+    .div08 { grid-area: 2 / 4 / 3 / 5; }
+    .div09 { grid-area: 3 / 1 / 4 / 2; }
+    .div010 { grid-area: 3 / 2 / 4 / 3; }
+    .div011 { grid-area: 3 / 3 / 4 / 4; }
+    .div012 { grid-area: 3 / 4 / 4 / 5; }
+    .div013 { grid-area: 4 / 1 / 5 / 2; }
+    .div014 { grid-area: 4 / 2 / 5 / 3; }
+    .div015 { grid-area: 4 / 3 / 5 / 4; }
+
+
+
+
+
+ .card {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    /* box-shadow: 0 0 16px #000000; */
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.02) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+    /* border-top: 5px solid #cc1e4a; */
+    border-radius: 20px;
+    /* background-color: #cc1e4a; */
+  }
+
+.cardfardin{
+  border-top: 5px solid #cc1e4a;
+  background-color: #cc1e4a;
+}
+.cardforhad{
+    border-top: 5px solid #004c6c;
+    background-color: #004c6c;
+}
+
+.cardZubaer, .cardFaiza, .cardAtoshi, .cardSonia, .cardArafat, .cardAli, .cardYeasin{
+  border-top: 5px solid #06D6A0;
+  background-color: #06D6A0; 
+}
+
+.cardAlif, .cardAtikur, .cardMahmud, .cardMamun, .cardAvishek,.cardKhalid, .cardSrejon{
+  border-top: 5px solid #EF476F;
+  background-color: #EF476F; 
+}
+
+.cardNuri ,.cardShoplin, .cardShatabdi, .cardHabib, .cardAfjal, .cardKafi, .cardImtiyaj{
+  border-top: 5px solid #26547C;
+  background-color: #26547C;
+}
+
+.cardSayma, .cardFahad, .cardKoli, .cardKoushik, .cardSaad, .cardAlex, .cardMahi{
+  border-top: 5px solid #FFD166;
+  background-color: #FFD166;
+}
+  
+  .content {
+    height: 350px;
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    padding: 5em;
+    transform-style: preserve-3d;
+    color: #FFFFFF;
+    background-image: url(images/member/Fardin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+
+.contentforhad{
+  background-image: url(images/member/Forhad\ Uddin.jpg);
+}
+.connectZubaer{
+  background-image: url(images/member/Zubaer\ Hossain.jpg);
+}
+.connectAlif{
+  background-image: url(images/member/Aftab\ Uddin\ Alif.jpg);
+}
+.contentNuri{
+  background-image: url(images/member/Jannatul\ Nuri.png);
+}
+.connectSayma{
+  background-image: url(images/member/Sayma\ Khorshed\ Chowdhury.jpg);
+}
+.connectShoplin{
+  background-image: url(images/member/Tawsif\ Rahman\ Shopnil.jpg);
+}
+.connectFahad{
+  background-image: url(images/member/KS\ Fahad.jpg);
+}
+.connectAtikur{
+  background-image: url(images/member/Atikur\ Rahman.jpg);
+}
+.connectFaiza{
+  background-image: url(images/member/Jannateen\ Tajree\ Faiza.jpg);
+}
+.connectKoli{
+  background-image: url(images/member/Koli\ Rani\ Pa.jpg);
+}
+.contentShatabdi{
+  background-image: url(images/member/Shatabdi\ Majumdar.jpg);
+}
+.connectAtoshi{
+  background-image: url(images/member/Atoshi\ Chowdhury.jpg);
+}
+.connectMahmud{
+  background-image: url(images/member/Al\ Mahmud\ Sarker.jpg);
+}
+.connectHabib{
+  background-image: url(images/member/Ahosan\ Habib.jpg);
+}
+
+
+/* EX member */
+.connectSonia{
+  background-image: url(images/member/Sonia\ Akter.jpg);
+}
+.connectMamun{
+  background-image: url(images/member/MD\ Obyedullahil\ Mamun.jpg);
+}
+.connectAfjal{
+  background-image: url(images/member/Afjal\ Hossain\ Mahin.jpg);
+}
+.connectKoushik{
+  background-image: url(images/member/Koushik\ Roy.jpg);
+}
+.connectAvishek{
+  background-image: url(images/member/Avishek\ Datta\ Utsha.jpg);
+}
+.connectSaad{
+  background-image: url(images/member/MD\ Saad\ Bin\ Kamal.jpg);
+}
+.contentArafat{
+  background-image: url(images/member/Md\ Arafat\ Bin\ M.\ Rahman.jpg);
+}
+.connectKafi{
+  background-image: url(images/member/G.\ M.\ Abdullah\ Al\ Kafi.jpg);
+}
+.connectAli{
+  background-image: url(images/member/Golam\ Ali.jpg);
+}
+.connectAlex{
+  background-image: url(images/member/Samiur\ Rabbi\ Alex.jpg);
+}
+.contentKhalid{
+  background-image: url(images/member/Khalid\ Abdullah.jpg);
+}
+.contentImtiyaj{
+  background-image: url(images/member/Abdullah\ Imtiyaj\ Mazumdar.jpg);
+}
+.connectYeasin{
+  background-image: url(images/member/Yeasin\ Haque.jpg);
+}
+.connectSrejon{
+  background-image: url(images/member/MD\ Rashedin\ Khan\ Srejon.jpg);
+}
+.contentMahi{
+  background-image: url(images/member/Adib\ Al\ Mahi.jpg);
+}
+
+
+
+  .front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    transform: translateZ(2rem);
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color:  rgb(21, 62, 82);
+  }
+
+  .back h1{
+    font-size: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transform: translateZ(4rem);
+  }
+  
+  .description {
+    text-align: justify;
+    line-height: 30px;
+    transform: translateZ(3.5rem);
+  }
+
+
+
+
+   @media (max-width: 800px) {
+
+    .loader span {
+        font-size: 95%;
+    }
+
+
+    .parent {
+        padding: 10%;
+        grid-template-columns: 1fr;
+        }
+        
+        .div1 { grid-area: 2 / 1 / 3 / 2; }
+        .div2 { grid-area: 1 / 1 / 2 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+        .div4 { grid-area: 4 / 1 / 5 / 2; }
+        .div5 { grid-area: 5 / 1 / 6 / 2; }
+        .div6 { grid-area: 6 / 1 / 7 / 2; }
+        .div7 { grid-area: 7 / 1 / 8 / 2; }
+        .div8 { grid-area: 8 / 1 / 9 / 2; }
+        .div9 { grid-area: 9 / 1 / 10 / 2; }
+        .div10 { grid-area: 10 / 1 / 11 / 2; }
+        .div11 { grid-area: 11 / 1 / 12 / 2; }
+        .div12 { grid-area: 12 / 1 / 13 / 2; }
+        .div13 { grid-area: 13 / 1 / 14 / 2; }
+        .div14 { grid-area: 14 / 1 / 15 / 2; }
+        .div15 { grid-area: 15 / 1 / 16 / 2; }
+        .div16 { grid-area: 16 / 1 / 17 / 2; }
+
+
+        .parent01{
+            padding: 10%;
+            grid-template-columns: 1fr;
+            }
+            
+            .div01 { grid-area: 1 / 1 / 2 / 2; }
+            .div02 { grid-area: 2 / 1 / 3 / 2; }
+            .div03 { grid-area: 3 / 1 / 4 / 2; }
+            .div04 { grid-area: 4 / 1 / 5 / 2; }
+            .div05 { grid-area: 5 / 1 / 6 / 2; }
+            .div06 { grid-area: 6 / 1 / 7 / 2; }
+            .div07 { grid-area: 7 / 1 / 8 / 2; }
+            .div08 { grid-area: 8 / 1 / 9 / 2; }
+            .div09 { grid-area: 9 / 1 / 10 / 2; }
+            .div010 { grid-area: 10 / 1 / 11 / 2; }
+            .div011 { grid-area: 11 / 1 / 12 / 2; }
+            .div012 { grid-area: 12 / 1 / 13 / 2; }
+            .div013 { grid-area: 13 / 1 / 14 / 2; }
+            .div014 { grid-area: 14 / 1 / 15 / 2; }
+            .div015 { grid-area: 15 / 1 / 16 / 2; }
+   }

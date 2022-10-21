@@ -1,0 +1,760 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: Arial, sans-serif;
+  /* background-color: #D9ECF2; */
+   background-color: #f6f9fa;
+}
+
+.header h1{
+  background-color: #0d686e;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+nav {
+  background: #FFFFFF;
+  /* background-color: #000000; */
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 10px 1px 1px #777676;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  margin-right: 15px;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+  color: #000000;
+  font-size: 16px;
+  transition: 0.2s ease;
+  border-radius: 20px;
+    
+}
+
+nav .mainMenu li a:hover {
+  background: #06373A;
+  border-radius: 0px;
+  color: #ffffff;
+  transition: 1.5s ease;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+  .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-bars{
+  background-color: #06373A;
+  border-radius: 20%;
+}
+
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  nav .logo {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    margin-left: 10px;
+  }
+   nav div img{
+    width: 100%;
+    height: 100%;
+   }
+
+nav div h1{
+  display: none;
+}
+
+
+.slider h5{
+  font-size: 30px;
+}
+
+
+.bcc-know{
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.bcc-know-img{
+  width: auto;
+}
+.bcc-know-img img{
+  width: 300px;
+  height: 300px;
+}
+
+.bcc-know-p{
+  padding: 10px;
+}
+.bcc-know-p h1{
+  color: #083638;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.bcc-know-p p{
+  text-align: justify;
+  padding: 10px;
+}
+
+
+/* Poster Area  */
+/* Register */
+/* -----------------Register------------- */
+
+.bccnews{
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: #E8E8E8;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.containerRegister {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cardRegister {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 16px;
+  border: 1px solid #232323;
+  transition: all .5s ease-in-out;
+  background-image: url(images/Register.png);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.02) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+}
+
+.card-hiddenRegister {
+  display: flex;
+  height: 400px;
+  transform: translateX(4%);
+  flex-direction: column;
+  gap: .5rem;
+  transition: transform .5s ease-in, opacity .3s ease-in;
+  opacity: 0;
+}
+
+.card-borderRegister {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 1px dashed #232323;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/*Hovers*/
+.cardRegister:hover {
+  /* transform: translate(-5px, -5px); */
+  border-color: #5bc0eb;
+  /* opacity: calc(10%); */
+}
+
+.cardRegister:hover .card-hiddenRegister {
+  transform: translateY(0);
+  opacity: 1;
+  background-color: #FFFFFF;
+  border-left: 10px solid #004c6c;
+  padding: 20px;
+  overflow: auto;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.cardRegister:hover .titleRegister {
+  transform: translateY(200%);
+}
+
+/*Text*/
+.titleRegister {
+  position: absolute;
+  bottom: 1rem;
+  transition: transform .25s ease-out;
+}
+
+
+
+/* ----------------------- */
+/* -------------------------- */
+.segment{
+  width: 100%;
+  height: auto;
+  background-color: #F8F2F8;
+  padding-bottom: 5%;
+  box-shadow: 0px 0px 5px 5px rgb(240, 240, 240) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+
+}
+.parent10{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3%;
+  grid-row-gap: 4%;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  }
+  
+  .parent10 div{
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.02) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+
+  }
+  .div101 { grid-area: 1 / 1 / 2 / 4; }
+  .div102 { grid-area: 1 / 4 / 2 / 5; }
+  .div103 { grid-area: 2 / 1 / 3 / 2; }
+  .div104 { grid-area: 2 / 2 / 3 / 3; }
+  .div105 { grid-area: 2 / 3 / 3 / 4; }
+  .div106 { grid-area: 2 / 4 / 3 / 5; }
+  .div107 { grid-area: 3 / 1 / 4 / 2; }
+  .div108 { grid-area: 3 / 2 / 4 / 3; }
+  .div109 { grid-area: 3 / 3 / 4 / 4; }
+  .div1010 { grid-area: 3 / 4 / 4 / 5; }
+
+
+
+  .parent10 img{
+    width: 100%;
+  }
+
+  .festbar h1{
+    font-size: 100%;
+    background-color: #cc1e4a;
+    padding: 20px;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 20px 0;
+    border-top: 5px solid #004c6c;
+  }
+
+  .festbar h3{
+    padding: 20px;
+    font-size: 100%;
+    background-color: #004c6c;
+    color: #FFFFFF;
+    border-radius: 0px 30px;
+    margin: 20px 0;
+    border-left: 5px solid #cc1e4a;
+
+  }
+
+
+  .festbar h1:hover{
+    cursor: pointer;
+    background-color: #004c6c;
+    transition: 1.5s;
+    border-radius: 0px;
+  }
+  .festbar h3:hover{
+    cursor: pointer;
+    background-color: #cc1e4a;
+    transition: 1.5s;
+    border-radius: 0px;
+  }
+
+  .parent10 .divtext{
+    padding: 10px;
+    box-shadow: none;
+    padding-top: 0%;
+  }
+
+  .parent10 .divtext h1{
+    font-size: 20px;
+  }
+
+  .parent10 .divtext p{
+    text-align: justify;
+  }
+
+
+
+
+
+
+  /* Tech-titans */
+
+  .parent2 {
+    width: 100%;
+    height: 40rem;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .div21 { grid-area: 1 / 1 / 2 / 2; }
+    .div22 { grid-area: 1 / 2 / 2 / 3; }
+
+
+
+.card01 {
+  width: 40%;
+  height: 40%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+  background-image: url(images/Tech\ Titans.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card02{
+  background-image: url(images/Bangladesh\ Ace\ Encoders.png);
+}
+
+.card01:hover {
+  height: 35rem;
+  transform: skew(0deg);
+}
+.tnx{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #06373A;
+  padding: 20px;
+  padding-left: 100px;
+}
+
+footer img{
+  width: 150px;
+  height: auto;
+}
+
+
+
+/* Compion CSSSSSSSSSSSSSSEEEEEEEEEEEEEEEEEEEEEEEEE 20222222222 */
+.compioncse{
+  width: 100%;
+  padding: 8%;
+}
+
+.compioncse h1{
+  background-color: #9e0a2f;
+  color: #FFFFFF;
+  padding: 10px;
+  border-left: 10px solid #000000;
+  border-right:  10px solid #000000;
+  text-transform: uppercase;
+}
+.parentCompion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2%;
+  grid-row-gap: 30px;
+  align-items: center;
+  }
+
+  .parentCompion div{
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.02) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+    border-radius: 15px;
+  }
+  
+  .divCompion1 { grid-area: 1 / 1 / 3 / 5; }
+  .divCompion2 { grid-area: 3 / 1 / 4 / 2; }
+  .divCompion3 { grid-area: 3 / 2 / 4 / 3; }
+  .divCompion4 { grid-area: 3 / 3 / 4 / 4; }
+  .divCompion5 { grid-area: 3 / 4 / 4 / 5; }
+
+  .parentCompion img{
+    width: 100%;
+    border-radius: 15px;
+  }
+
+/* -------------------------------------- */
+/* CSE Fest 2022 */
+.event{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+}
+
+
+.infoevent{
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.event h1{
+  text-transform: uppercase;
+  background-color: #cc1e4a;
+  padding: 20px;
+  color: #FFFFFF;
+  border-left: 10px solid #000000;
+  border-right: 10px solid #000000;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.event h1:hover{
+  background-color: #083638;
+  transition: 1.5s;
+}
+
+.event li{
+  background-color: #083638;
+  margin: 5px;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.event li:hover{
+  background-color: #cc1e4a;
+  transition: 0.5s;
+}
+.parentevent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  }
+
+.parentevent div{
+  box-shadow: 0px 0px 5px 5px rgb(240, 240, 240) inset, 0px 15px 12px 0px rgba(0,0,0,0.22);
+  border-radius: 20px;
+}
+  
+  .divevent1 { grid-area: 1 / 1 / 4 / 3; }
+  .divevent2 { grid-area: 1 / 3 / 2 / 4; }
+  .divevent3 { grid-area: 2 / 3 / 3 / 4; }
+  .divevent4 { grid-area: 3 / 3 / 4 / 4; }
+  .divevent5 { grid-area: 4 / 1 / 5 / 2; }
+  .divevent6 { grid-area: 4 / 2 / 5 / 3; }
+  .divevent7 { grid-area: 4 / 3 / 5 / 4; }
+
+  .parentevent img{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*-----Registasion  */
+
+  .deptlabel{
+    background-color: #cc1e4a;
+    padding: 2% 5%;
+    border-radius: 0px 20px;
+    
+  }
+    
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+.regsubmit{
+  width: 100%;
+  background-color: #e25c69;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.regsubmit:hover{
+  background-color: #9e0a2f;
+  transition: 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #083638;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+
+    .header h1{
+      font-size: 100%;
+    }
+
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: #FFFFFF;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+    nav div h1{
+      display: inline-block;
+      color: #06373A;
+      font-size: 30px;
+      text-shadow: 0 1px 1.5px #000000;
+    }
+
+
+    .bcc-know{
+      flex-direction: column;
+    }
+
+    .bcc-know-img img{
+      width: 150px;
+      height: 150px;
+    }
+    
+    .bcc-know-p{
+      padding: 10px;
+    }
+    .bcc-know-p h1{
+      font-size: 100%;
+      text-align: center;
+    }
+
+    .card-hiddenRegister {
+      height: 100px;
+      font-size: 100%;
+ 
+    }
+
+    .bccnews .card-hiddenRegister h3{
+      font-size: 100%;
+    } 
+
+    .titleRegister{
+      font-size: 100%;
+    } 
+
+
+    .parent10 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 1%;
+      grid-row-gap: 1%;
+      align-items: start;
+      }
+      
+      .div101 { grid-area: 1 / 1 / 2 / 3; 
+        align-self: center;
+      }
+      .div102 { grid-area: 2 / 1 / 3 / 3; }
+      .div103 { grid-area: 3 / 1 / 4 / 2; }
+      .div104 { grid-area: 3 / 2 / 4 / 3; }
+      .div105 { grid-area: 4 / 1 / 5 / 2; }
+      .div106 { grid-area: 4 / 2 / 5 / 3; }
+      .div107 { grid-area: 5 / 1 / 6 / 2; }
+      .div108 { grid-area: 5 / 2 / 6 / 3; }
+      .div109 { grid-area: 6 / 1 / 7 / 2; }
+      .div1010 { grid-area: 6 / 2 / 7 / 3; }
+
+      .parent10 .divtext h1{
+        font-size: 100%;
+      }
+      .parent10 .divtext p{
+        font-size: 10px;
+        text-align: justify;
+      }
+
+      
+  .festbar h1{
+    font-size: 100%;
+    padding: 15px;
+    margin: 0px 20px;
+    text-align: center;
+  }
+
+  .festbar h3{
+    padding: 15px;
+    font-size: 100%;
+    margin: 15px 20px;
+    border-left: 5px solid #cc1e4a;
+
+  }
+  .card01
+  {
+    width: 50%;
+  }
+  .parent2 {
+    padding: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+    }
+
+    .card01:hover {
+      height: 15rem;
+    }
+    
+    .div21 { grid-area: 1 / 1 / 2 / 2; }
+    .div22 { grid-area: 2 / 1 / 3 / 2; }
+
+
+      .parentCompion {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        }
+        
+        .divCompion1 { grid-area: 1 / 1 / 3 / 5; }
+        .divCompion2 { grid-area: 3 / 1 / 4 / 3; }
+        .divCompion3 { grid-area: 3 / 3 / 4 / 5; }
+        .divCompion4 { grid-area: 4 / 1 / 5 / 3; }
+        .divCompion5 { grid-area: 4 / 3 / 5 / 5; }
+
+
+
+    /* Evenet CSE FEST */
+    .parentevent {
+      display: grid;
+      grid-template-columns: 1fr;
+      }
+      
+      .divevent1 { grid-area: 1 / 1 / 2 / 2; }
+      .divevent2 { grid-area: 2 / 1 / 3 / 2; }
+      .divevent3 { grid-area: 3 / 1 / 4 / 2; }
+      .divevent4 { grid-area: 4 / 1 / 5 / 2; }
+      .divevent5 { grid-area: 5 / 1 / 6 / 2; }
+      .divevent6 { grid-area: 6 / 1 / 7 / 2; }
+      .divevent7 { grid-area: 7 / 1 / 8 / 2; }
+
+
+
+
+
+  }
+  
+

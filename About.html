@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCC About</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images/icon BCC logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <style>
+        @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #8c8eb1;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 13s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 59%;
+    width: 56px;
+    height: 56px;
+    bottom: -56px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 75%;
+    width: 75px;
+    height: 75px;
+    bottom: -75px;
+    animation-delay: 3s;
+}
+.background li:nth-child(2) {
+    left: 50%;
+    width: 72px;
+    height: 72px;
+    bottom: -72px;
+    animation-delay: 1s;
+}
+.background li:nth-child(3) {
+    left: 78%;
+    width: 79px;
+    height: 79px;
+    bottom: -79px;
+    animation-delay: 3s;
+}
+.background li:nth-child(4) {
+    left: 0%;
+    width: 55px;
+    height: 55px;
+    bottom: -55px;
+    animation-delay: 4s;
+}
+.background li:nth-child(5) {
+    left: 81%;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    animation-delay: 24s;
+}
+.background li:nth-child(6) {
+    left: 10%;
+    width: 66px;
+    height: 66px;
+    bottom: -66px;
+    animation-delay: 19s;
+}
+.background li:nth-child(7) {
+    left: 9%;
+    width: 76px;
+    height: 76px;
+    bottom: -76px;
+    animation-delay: 22s;
+}
+.background li:nth-child(8) {
+    left: 59%;
+    width: 51px;
+    height: 51px;
+    bottom: -51px;
+    animation-delay: 18s;
+}
+.background li:nth-child(9) {
+    left: 76%;
+    width: 54px;
+    height: 54px;
+    bottom: -54px;
+    animation-delay: 6s;
+}
+.background li:nth-child(10) {
+    left: 87%;
+    width: 85px;
+    height: 85px;
+    bottom: -85px;
+    animation-delay: 29s;
+}
+.background li:nth-child(11) {
+    left: 33%;
+    width: 67px;
+    height: 67px;
+    bottom: -67px;
+    animation-delay: 17s;
+}
+.background li:nth-child(12) {
+    left: 26%;
+    width: 76px;
+    height: 76px;
+    bottom: -76px;
+    animation-delay: 48s;
+}
+.background li:nth-child(13) {
+    left: 83%;
+    width: 62px;
+    height: 62px;
+    bottom: -62px;
+    animation-delay: 34s;
+}
+.background li:nth-child(14) {
+    left: 14%;
+    width: 82px;
+    height: 82px;
+    bottom: -82px;
+    animation-delay: 9s;
+}
+.background li:nth-child(15) {
+    left: 89%;
+    width: 50px;
+    height: 50px;
+    bottom: -50px;
+    animation-delay: 25s;
+}
+.background li:nth-child(16) {
+    left: 54%;
+    width: 61px;
+    height: 61px;
+    bottom: -61px;
+    animation-delay: 76s;
+}
+.background li:nth-child(17) {
+    left: 41%;
+    width: 73px;
+    height: 73px;
+    bottom: -73px;
+    animation-delay: 36s;
+}
+.background li:nth-child(18) {
+    left: 53%;
+    width: 66px;
+    height: 66px;
+    bottom: -66px;
+    animation-delay: 86s;
+}
+.background li:nth-child(19) {
+    left: 57%;
+    width: 55px;
+    height: 55px;
+    bottom: -55px;
+    animation-delay: 55s;
+}
+.background li:nth-child(20) {
+    left: 60%;
+    width: 74px;
+    height: 74px;
+    bottom: -74px;
+    animation-delay: 68s;
+}
+.background li:nth-child(21) {
+    left: 78%;
+    width: 69px;
+    height: 69px;
+    bottom: -69px;
+    animation-delay: 51s;
+}
+.background li:nth-child(22) {
+    left: 19%;
+    width: 79px;
+    height: 79px;
+    bottom: -79px;
+    animation-delay: 54s;
+}
+.background li:nth-child(23) {
+    left: 26%;
+    width: 64px;
+    height: 64px;
+    bottom: -64px;
+    animation-delay: 98s;
+}
+.background li:nth-child(24) {
+    left: 29%;
+    width: 62px;
+    height: 62px;
+    bottom: -62px;
+    animation-delay: 77s;
+}
+.background li:nth-child(25) {
+    left: 63%;
+    width: 83px;
+    height: 83px;
+    bottom: -83px;
+    animation-delay: 101s;
+}
+.background li:nth-child(26) {
+    left: 11%;
+    width: 75px;
+    height: 75px;
+    bottom: -75px;
+    animation-delay: 97s;
+}
+.background li:nth-child(27) {
+    left: 43%;
+    width: 50px;
+    height: 50px;
+    bottom: -50px;
+    animation-delay: 55s;
+}
+.background li:nth-child(28) {
+    left: 22%;
+    width: 57px;
+    height: 57px;
+    bottom: -57px;
+    animation-delay: 127s;
+}
+.background li:nth-child(29) {
+    left: 41%;
+    width: 53px;
+    height: 53px;
+    bottom: -53px;
+    animation-delay: 6s;
+}
+.background li:nth-child(30) {
+    left: 56%;
+    width: 85px;
+    height: 85px;
+    bottom: -85px;
+    animation-delay: 88s;
+}
+.background li:nth-child(31) {
+    left: 4%;
+    width: 50px;
+    height: 50px;
+    bottom: -50px;
+    animation-delay: 34s;
+}
+.background li:nth-child(32) {
+    left: 57%;
+    width: 78px;
+    height: 78px;
+    bottom: -78px;
+    animation-delay: 3s;
+}
+.background li:nth-child(33) {
+    left: 36%;
+    width: 63px;
+    height: 63px;
+    bottom: -63px;
+    animation-delay: 105s;
+}
+.background li:nth-child(34) {
+    left: 21%;
+    width: 54px;
+    height: 54px;
+    bottom: -54px;
+    animation-delay: 59s;
+}
+.background li:nth-child(35) {
+    left: 26%;
+    width: 56px;
+    height: 56px;
+    bottom: -56px;
+    animation-delay: 39s;
+}
+.background li:nth-child(36) {
+    left: 44%;
+    width: 81px;
+    height: 81px;
+    bottom: -81px;
+    animation-delay: 65s;
+}
+.background li:nth-child(37) {
+    left: 72%;
+    width: 69px;
+    height: 69px;
+    bottom: -69px;
+    animation-delay: 159s;
+}
+.background li:nth-child(38) {
+    left: 57%;
+    width: 73px;
+    height: 73px;
+    bottom: -73px;
+    animation-delay: 182s;
+}
+.background li:nth-child(39) {
+    left: 36%;
+    width: 83px;
+    height: 83px;
+    bottom: -83px;
+    animation-delay: 62s;
+}
+.background li:nth-child(40) {
+    left: 89%;
+    width: 80px;
+    height: 80px;
+    bottom: -80px;
+    animation-delay: 39s;
+}
+.background li:nth-child(41) {
+    left: 83%;
+    width: 75px;
+    height: 75px;
+    bottom: -75px;
+    animation-delay: 14s;
+}
+.background li:nth-child(42) {
+    left: 5%;
+    width: 86px;
+    height: 86px;
+    bottom: -86px;
+    animation-delay: 63s;
+}
+.background li:nth-child(43) {
+    left: 36%;
+    width: 78px;
+    height: 78px;
+    bottom: -78px;
+    animation-delay: 76s;
+}
+.header{
+    position: relative;
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+.parentabout {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgba(114, 110, 110, 0.288);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    /* grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+}
+
+.divabout1 {
+    align-self: center;
+    padding: 7%;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.divabout2 { 
+    padding: 7%;
+    grid-area: 1 / 2 / 2 / 3; }
+
+.aboutfooter{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.divabout1 img{
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    height: 210px;
+    border-radius: 100%;
+    opacity: calc(80%);
+    border: 5px solid #FFFFFF;
+}
+.divabout1 h1{
+    display: block;
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
+.divabout1 ul li{
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(32, 32, 32, 0.247);
+    border-left: 5px solid #FFFFFF;
+    list-style: none;
+    cursor: pointer;
+}
+
+.divabout1 ul li:hover{
+    background-color: #FFFFFF;
+    color: black;
+    transition: 1.5s;
+}
+.meet {
+    display: block;
+    margin: auto 30%;
+    padding: 20px;
+
+}
+
+.meet img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    opacity: calc(70%);
+    border: none;
+
+}
+
+.divabout2 p{
+    color: #FFFFFF;
+    font-size: 100%;
+    padding: 20px 0;
+}
+
+.divabout2 img{
+    width: 100%;
+    opacity: calc(50%);
+    border-radius: 20px;
+}
+
+.divabout2 div{
+    position: relative;
+}
+
+.divabout2 div p{
+    padding: 5px;
+    position: absolute;
+    bottom: 5%;
+}
+
+@media (max-width: 800px) {
+
+    .parentabout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+}
+
+.divabout1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.divabout2 { grid-area: 2 / 1 / 3 / 2; }
+
+
+.divabout1 h1{
+    text-transform: uppercase;
+    font-size: 100%;
+    color: #FFFFFF;
+}
+
+.meet {
+    margin: auto 20%;
+}
+
+.divabout2 div p{
+    font-size: 12px;
+}
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BAIUST computer club</h1>
+    </div>
+    
+        <nav>
+            <div class="logo">
+                <!-- <h1>Deltaty</h1> -->
+                <a href="index.html"><img src="images/icon BCC logo.png" alt=""></a>
+            </div>
+            <!-- <div>
+                <h1>BCC</h1>
+            </div> -->
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Panel member.html">Plan member</a></li>
+                <li><a href="cse-fest.html">cse fest</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Program.html">Program</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <div class="closeMenu">
+                    <i class="fa fa-times"></i>
+                </div>
+
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </ul>
+        </nav>
+
+          
+
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+
+
+
+        <div class="parentabout">
+            <div class="divabout1"> 
+                <img src="images/atik.jpg" alt="">
+                <h1>MD ATIKUR Rahman</h1>
+                <ul>
+                    <li>Full stack developer.</li>
+                    <li>Institutional learning : Sheikh Kamal IT Training & Incubation Center project.</li>
+                    <li>Studied at Bangladesh Army International University of Science & Technology.</li>
+                    <li>B.Sc in Computer Science & Engineering (CSE) at Student.</li>
+                </ul>
+                <div class="meet">
+                    <a href="https://www.facebook.com/atikcse59/"><img src="images/fb_icon.png" alt=""></a>
+                    <a href="https://github.com/atik59"><img src="images/github.png" alt=""></a>
+                </div>
+            </div>
+            <div class="divabout2"> 
+                <p>To create this website. which has been used.</p>
+                <img src="images/html-css-js.png" alt="">
+                <img src="images/bootstrap-5.jpg" alt="">
+                <div class="aboutfooter">
+                    <p>Thank you for visiting the website. The website will change further. And new features will be added.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320"><path fill="#273036" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,144C672,128,768,64,864,69.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                </div>
+            </div>
+        </div> 
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
